@@ -1,1 +1,1 @@
-export const FETCH_TASKS_API="http://localhost:3002/user/viewAll"
+export const FETCH_TASKS_API="http://localhost:3002/task/viewAll"

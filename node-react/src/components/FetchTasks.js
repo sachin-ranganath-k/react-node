@@ -10,7 +10,17 @@ const FetchTasks = () => {
     dispatch(fetchTasks());
   }, [dispatch]);
 
-  return <div>FetchTasks</div>;
+  return (
+    <div>
+      <h1>Tasks</h1>
+      <br />
+      <ul>
+        {tasks.map((task) => (
+          <li key={task.taskId}>{task.taskDesc}</li>
+        ))}
+      </ul>
+    </div>
+  );
 };
 
 export default FetchTasks;
